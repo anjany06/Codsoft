@@ -1,29 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Anjany-Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="left">Welcome</div>
-      <div class="right">
-        <ul class = "navbar">
-          <li>Home</li>
-          <li>Skills</li>
-          <li>Education</li>
-          <li>Projects</li>
-          <li>Contact Me</li>
-        </ul>
-      </div>
-    </nav>
-  </header>
- 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer">
+  <body>
+    <header>
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contactUs">Contact Me</a></li>
+          </ul>
+        </div>
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contactUs" class="nav-link">Contact Me</a></li>
+          </ul>
+        </div>
+          
+        <div class="rightSide">
+          <a href="https://www.instagram.com/subham_pvt09/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/Subham0094"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/anjany-pandey-927169294/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/anjany06"
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <video id="bg-video" autoplay loop muted playsinLine>
+      <source src="4K_26.mp4" type="video/mp4">
+    </video>
+    <main>
+
+      <section id="home" class="show-animate">
+        <div class="left-container animate">
+          <h2 class="hello">Hello I'm</h2>
+          <h1 class="name">Anjany Pandey</h1>
+          <h3 class ="profile animate">Front-end Developer | Web Designer | Passionate Coder</h3>
+          <div class="social-media">
+            <a href="https://www.instagram.com/subham_pvt09/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://x.com/Subham0094">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anjany-pandey-927169294/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/anjany06">
+              <i class="fa-brands fa-square-github"></i>
+            </a>
+          </div>
+          <a href="ANJANY PANDEY RESUME.pdf" download="ANJANY PANDEY RESUME.pdf"><button class="btn">Download Resume</button></a>
+          <a href="#skills"><button class="btn">My Skills</button></a>
+          <a href="#projects"><button class="btn">My Projects</button></a>
+        </div>
+
+        <div class="right-container">
+          <img src="coding2.png" alt="coding image" height="500px"width="500px">
+        </div>
+      </section>
+
+      <section id="about">
+        <h1 class="animate">About <span id="me">Me</span></h1>
+        <div class="about-container animate">
+          <div class="about-image-border"></div>
+          <div class="about-image">
+            <img src="pic2.jpg" alt="my pic" />
+          </div>
+          <div class="about-text">
+            <p>
+              Hi, I'm <span id="me">Anjany pandey </span>a passionate <span id="me">front-end developer</span> with a strong foundation
+              in C++ and a growing expertise in React.js, currently pursuing BCA from VIPS-TC. I enjoy turning
+              complex problems into simple, beautiful, and intuitive designs. My
+              journey in web development has led me to create functional and
+              visually appealing projects, like a front-end of social media platform and a
+              dynamic calculator, using React.js. I'm always eager to learn new
+              technologies and enhance my skills to build impactful web
+              applications.
+            </p>
+          </div>
+          <a href="#contactUs">Contact Me</a>
+        </div>
+      </section>
+
+
+      <section id="skills">
+        <h2 class="animate"> My <span id="me">Skills</span></h2>
+        <div class="skills-container">
+          <div class="skill-category animate">
+            <ul>
+              <li>
+                <i class="fab fa-html5"></i>
+                <div class="dropdown">
+                <span>HTML5</span>
+                <div class="dropdown-content">
+                  <span>85%</span>
+                </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-css3-alt"></i>
+                <div class="dropdown">
+                <span>CSS3</span>
+                <div class="dropdown-content">
+                  <span>80%</span>
+                </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-js-square"></i>
+                <div class="dropdown">
+                <span>JavaScript</span>
+                <div class="dropdown-content">
+                  <span>70%</span>
+                </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-php"></i>
+                <div class="dropdown">
+                <span>PHP</span>
+                <div class="dropdown-content">
+                  <span>70%</span>
+                </div>
+              </div>
+              </li>
+              <li>
+                <i class="fa-brands fa-python"></i>
+                <div class="dropdown">
+                <span>PYTHON</span>
+                <div class="dropdown-content">
+                  <span>60%</span>
+              </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category animate">
+            <ul>
+              <li>
+                <i class="fab fa-react"></i>
+                <div class="dropdown">
+                <span>React</span>
+                <div class="dropdown-content">
+                  <span>70%</span>
+              </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-bootstrap"></i>
+                <div class="dropdown">
+                <span>Bootstrap</span>
+                <div class="dropdown-content">
+                  <span>75%</span>
+              </div>
+              </div>
+              </li>
+              <li>
+                <i class="fas fa-database"></i>
+                <div class="dropdown">
+                <span>MySQL</span>
+                <div class="dropdown-content">
+                  <span>79%</span>
+              </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-git"></i>
+                <div class="dropdown">
+                <span>Git</span>
+                <div class="dropdown-content">
+                  <span>40%</span>
+              </div>
+              </div>
+              </li>
+              <li>
+                <i class="fab fa-npm"></i>
+                <div class="dropdown">
+                <span>npm</span>
+                <div class="dropdown-content">
+                  <span>30%</span>
+              </div>
+              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects">
+        <h1><span id="me">My </span>Projects</h1>
+        <div class="project-container">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="calc.jpg" alt="Project 1 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Dynamic calculator</h3>
+              <p>A dynamic calculator built with React.js, featuring a user-friendly interface and advanced calculation capabilities.</p>
+              <br>
+              <a href="https://calculator-react-bice-two.vercel.app/"class="btn">View live</a>
+              <a href="https://github.com/anjany06/calculator-react/tree/main/calculator" class="btn">View code</a>
+            </div>
+          </div>
+
+           <!-- Project 2 -->
+           <div class="project-card">
+            <div class="project-image">
+              <img src="urlshort.jpg" alt="Project 3 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Shortify</h3>
+              <p>I created a dynamic url shortener website - shortify which shorten the large links into tiny links using tinyurl API that redirects to same page.</p>
+              <br>
+              <a href="https://shortify-teal.vercel.app/" class="btn">View Live</a>
+              <a href="https://github.com/anjany06/UrlShortner" class="btn">View Code</a>
+            </div>
+          </div>
+
+      
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="rpss.jpg" alt="Project 3 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Rock Papers Scissors Game</h3>
+              <p>I created a Responsive Rock Papers Scisssors game using html css and JavaScript.</p>
+              <br>
+              <a href="https://cosmic-malasada-153f99.netlify.app" class="btn">View Live</a>
+              <a href="https://github.com/anjany06/Rock-Papers-scissors" class="btn">View Code</a>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="blogworld.png" alt="Project 3 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Blogworld.com</h3>
+              <p>It is a dynamic blog website built using php and mysql where users can login and then create blogs and blogs has features like upvote, downvote and add comments.</p>
+              <br>
+              <a href="https://phpweb860.infinityfreeapp.com/" class="btn">View Live</a>
+              <a href="https://github.com/anjany06/blogWebsite" class="btn">View Code</a>
+            </div>
+          </div>
+
+
+          <!-- Project 5-->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="ttt.jpg" alt="Project 3 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Tic-Tac-Toe</h3>
+              <p>To practice JavaScript i completed a tic-tac-toe game project which strengths my JavaScript concepts.</p>
+              <br>
+              <a href="https://reliable-bonbon-74bdda.netlify.app" class="btn">View Live</a>
+              <a href="https://github.com/anjany06/Tic-Tac-Toe-Game" class="btn">View Code</a>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="amazon1.jpg" alt="Project 4 Image"height ="150px"width="300px">
+            </div>
+            <div class="project-content">
+              <h3>Project : Amazon clone</h3>
+              <p>I replicate the amazon website to practice html and css</p>
+              <br>
+              <a href="https://amazon-clone-ashen-nine.vercel.app/" class="btn">View Live</a>
+              <a href="https://github.com/anjany06/amazon-clone" class="btn">View Code</a>
+            </div>
+          </div>
+
+         
+          </div>
+          
+      </section>
+      <a href="https://github.com/anjany06" class="project-btn">See More  Projects</a>
+
+      <section id="contactUs">
+        <h1>Contact Me</h1>
+        <p>Want to collaborate or hire me!</p>
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="e01742c0-7c17-46dd-a92d-cbb7cd492002">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"placeholder="Enter your message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <p>Or, you can also reach me at:</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:anjany.pandey06@gmail.com"
+              >anjany.pandey06@gmail.com</a
+            >
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919821169378">+919821169378</a>
+          </p>
+          <p>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/anjany-pandey-927169294/" ;
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+    <br>
+    <br>
+    <footer>
+      <p>&copy; 2024 Anjany Pandey. All rights reserved.</p>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contactUs">Contact Me</a></li>
+      </ul>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
